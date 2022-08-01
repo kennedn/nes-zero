@@ -34,6 +34,7 @@ ISR(PCINT0_vect) {
     TCNT0 = 0; // reset counter to 0
     TIMSK |= _BV(TOIE0); // enable timer0 interrupt
   } else {
+    timer_count = 0; 
     TIMSK &= ~(_BV(TOIE0)); // disable timer0 interrupt
     // OUT_PIN = 0 if both buttons pressed, else 1
     PORTB = (PORTB & ~_BV(OUT_PIN)) | (!button_state << OUT_PIN);
