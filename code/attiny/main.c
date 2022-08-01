@@ -10,8 +10,6 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <avr/sleep.h>
-#include <avr/power.h>
 
 volatile unsigned char timer_count=0;
 
