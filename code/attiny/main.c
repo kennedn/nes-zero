@@ -1,5 +1,5 @@
 #define F_CPU 16000000UL    // 16Mhz
-#define TIMER_TARGET 92     // 92 * 16.32ms = 1.5s
+#define TIMER_TARGET 74UL   // 74 * 16.32ms = 1.2s
 #define IN_PIN_1 PB1
 #define IN_PIN_2 PB2
 #define OUT_PIN PB3

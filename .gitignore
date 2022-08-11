@@ -1,3 +1,5 @@
 *.pdf
 *.bin
 *.hex
+*.swp
+*.MOV
